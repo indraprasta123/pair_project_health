@@ -1,0 +1,14 @@
+[
+  {
+    "username": "dokterKulit",
+    "email": "dokterKulit@gmail.com",
+    "password": "dokterKulit123",
+    "role": "doctor"
+  },
+  {
+    "username": "budi",
+    "email": "budi@gmail.com",
+    "password": "budi123",
+    "role": "patient"
+  }
+]
