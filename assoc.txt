@@ -1,0 +1,6 @@
+Symptoms.hasMany(models.DiseaseBook, { foreignKey: "SymptomId" });
+
+      Symptoms.belongsToMany(models.Booking, {
+        through: models.DiseaseBook,
+        foreignKey: "SymptomId",
+      });

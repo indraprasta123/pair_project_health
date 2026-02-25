@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       Booking.belongsTo(models.User, { foreignKey: "UserId" });
 
-      Booking.belongsTo(models.Disease, { foreignKey: "DiseasesId" });
+      Booking.belongsTo(models.Disease, { foreignKey: "DiseaseId" });
 
       Booking.hasMany(models.DiseaseBook, { foreignKey: "BookingId" });
 
@@ -24,7 +24,7 @@ module.exports = (sequelize, DataTypes) => {
     {
       bookingDate: DataTypes.DATE,
       UserId: DataTypes.INTEGER,
-      DiseasesId: DataTypes.INTEGER,
+      DiseaseId: DataTypes.INTEGER,
     },
     {
       sequelize,
